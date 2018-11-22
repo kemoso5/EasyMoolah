@@ -15,7 +15,9 @@ import { AboutComponent } from './content/about/about.component';
 const appRoutes: Routes = [
   // { path: '', redirectTo: '/recipes', pathMatch: 'full' },
   // { path: 'recipes', component: RecipesComponent, children: [
-    { path: '', component: HomeComponent },
+    { path: '', component: ContentComponent, children: [
+      { path: '', component: HomeComponent}
+    ] }
   //   { path: 'new', component: RecipeEditComponent },
   //   { path: ':id', component: RecipeDetailComponent },
   //   { path: ':id/edit', component: RecipeEditComponent },
