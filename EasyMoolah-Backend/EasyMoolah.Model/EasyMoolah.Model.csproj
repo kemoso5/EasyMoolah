@@ -70,11 +70,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Audit\AuditLogin.cs" />
+    <Compile Include="BaseModel.cs" />
+    <Compile Include="Merchant\MerchantAdress.cs" />
+    <Compile Include="Merchant\Merchant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
