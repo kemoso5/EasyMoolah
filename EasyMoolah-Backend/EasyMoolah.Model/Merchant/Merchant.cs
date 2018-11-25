@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace EasyMoolah.Model.Merchant
 {
@@ -33,6 +34,6 @@ namespace EasyMoolah.Model.Merchant
         public Boolean FinanceOffered { get; set; }
 
         [Required]
-        public int IndustryKey { get; set; }
+        public int IndustryId { get; set; }
     }
 }

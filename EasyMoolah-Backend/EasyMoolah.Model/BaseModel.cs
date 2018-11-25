@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,10 +12,7 @@ namespace EasyMoolah.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public virtual int Key { get; set; }
-
-        [Required]
-        public bool IsActive { get; set; }
+        public virtual int Id { get; set; }
 
         [Required]
         public DateTime CreateDate { get; set; }
@@ -22,11 +21,6 @@ namespace EasyMoolah.Model
         public DateTime ChangeDate{ get; set; }
 
         [Required]
-        [MaxLength(50)]
-        public string CreatedBy { get; set; }
-
-        [Required]
-        [MaxLength(50)]
-        public string ChangedBy { get; set; }
+        public bool IsActive { get; set; }
     }
 }

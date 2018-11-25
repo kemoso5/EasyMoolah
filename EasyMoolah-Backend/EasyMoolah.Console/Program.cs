@@ -12,7 +12,7 @@ namespace EasyMoolah.Console
         {
 
             System.Console.WriteLine("Testing");
-            System.Console.ReadLine
+    
         }
     }
 }

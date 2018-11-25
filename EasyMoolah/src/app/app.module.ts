@@ -8,6 +8,9 @@ import { ContentComponent } from './content/content.component';
 import { HomeComponent } from './content/home/home.component';
 import { AboutComponent } from './content/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BorrowerApplicationComponent } from './content/borrower-application/borrower-application.component';
+import { ContactComponent } from './content/contact/contact.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     ContentComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    BorrowerApplicationComponent,
+    ContactComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
