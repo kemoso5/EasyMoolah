@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EasyMoolah.Model
 {
@@ -18,7 +14,7 @@ namespace EasyMoolah.Model
         public DateTime CreateDate { get; set; }
 
         [Required]
-        public DateTime ChangeDate{ get; set; }
+        public DateTime ChangeDate { get; set; }
 
         [Required]
         public bool IsActive { get; set; }

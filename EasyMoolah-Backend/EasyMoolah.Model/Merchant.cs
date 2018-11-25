@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EasyMoolah.Model.Merchant
+namespace EasyMoolah.Model
 {
+    [Table("tbl_Merchant")]
     public class Merchant: BaseModel
     {
         [Required]
@@ -31,7 +29,7 @@ namespace EasyMoolah.Model.Merchant
         public float AverageTicket { get; set; }
 
         [Required]
-        public Boolean FinanceOffered { get; set; }
+        public bool FinanceOffered { get; set; }
 
         [Required]
         public int IndustryId { get; set; }

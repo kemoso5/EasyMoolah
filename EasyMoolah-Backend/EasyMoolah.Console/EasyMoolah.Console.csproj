@@ -49,11 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EasyMoolah.Notification\EasyMoolah.Notification.csproj">
-      <Project>{8355128e-7c9f-4a86-b004-29ed6502aec5}</Project>
-      <Name>EasyMoolah.Notification</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
